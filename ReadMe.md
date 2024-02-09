@@ -17,7 +17,7 @@ Node.js and Express.js: Server-side development and API endpoints.
 React: For responsive UI.
 
 Installation:
-Clone the repository: git clone https://github.com/debjena9/chatx-app.git
+Clone the repository: git clone https://github.com/debjena9/chatxapp.git
 Install dependencies: cd chatxapp && npm install
 Configure environment variables: Create a .env file based on the provided .env.example file and add necessary credentials.
 Start the server: npm start
