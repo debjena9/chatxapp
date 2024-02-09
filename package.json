@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "swagger": "node backend/swagger-autogen.js",
-    "start": "npm run swagger && node backend/server.js",
+    "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
