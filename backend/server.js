@@ -28,7 +28,17 @@ app.use(cors());
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/rooms', require('./routes/chatRoomRoutes'));
 app.use('/api/messages', require('./routes/chatRoutes'));
-app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+//commented the default
+//app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument,{
+    customJs: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.0.0/swagger-ui-bundle.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.0.0/swagger-ui-standalone-preset.js',
+    ],
+    customCssUrl: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.0.0/swagger-ui.css',
+    ],
+  }));
 
 // Serve frontend
 if (process.env.NODE_ENV === 'production') {
