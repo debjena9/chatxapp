@@ -5,7 +5,7 @@
     "description": "API documentation for the Chat application.",
     "version": "1.0.0"
   },
-  "host": "localhost:8000",
+  "host": "chatxapp.itsdeb.in",
   "basePath": "/",
   "tags": [
     {
